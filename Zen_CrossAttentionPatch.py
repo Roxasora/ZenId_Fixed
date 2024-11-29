@@ -2,7 +2,7 @@ import torch
 import math
 import torch.nn.functional as F
 from comfy.ldm.modules.attention import optimized_attention
-from .utils import tensor_to_size
+from .zen_utils import tensor_to_size
 
 class Attn2Replace:
     def __init__(self, callback=None, **kwargs):
